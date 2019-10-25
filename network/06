@@ -1,0 +1,4 @@
+/etc/resolv.conf
+#deduction
+#This File contains IP Adress of the DNS Server.
+#This File is a symlink to ../var/run/resolve.conf file.

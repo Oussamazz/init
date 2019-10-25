@@ -1,0 +1,1 @@
+eval ifconfig | grep "broadcast" | cut -d " " -f 6

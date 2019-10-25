@@ -1,0 +1,1 @@
+eval systemctl list-units --type service --all

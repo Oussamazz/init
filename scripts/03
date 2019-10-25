@@ -1,0 +1,4 @@
+#!/bin/bash
+rm -rf ~/.cocoapods.42_cache_bak*
+rm -rf ~/Library/*
+echo "done!"

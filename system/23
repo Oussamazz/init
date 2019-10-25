@@ -1,0 +1,2 @@
+on graphical session : Put your login and password.
+on ssh session: ssh <user_name>@<ipaddress> then put the password or with ssh <SERVER_IP> -l <user_name>.
