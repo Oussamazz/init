@@ -1,0 +1,1 @@
+eval ifconfig en0 | grep broadcast | awk {'print $6'} &&  ping -c 1 10.12.255.255 | arp -a | grep "(10.12."

@@ -1,1 +1,1 @@
-kill <pid>
+sudo pkill tail

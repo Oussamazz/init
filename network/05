@@ -1,1 +1,1 @@
-eval dig slash16.org | grep "SERVER: " | awk {'print $3'} | cut -c -11
+nslookup slash16.org

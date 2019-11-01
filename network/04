@@ -1,1 +1,1 @@
-eval route -n get default | grep "gateway" | cut -d " " -f 6
+eval route -n get default | grep "gateway" | cut -c 5- 

@@ -1,1 +1,1 @@
-hostnamectl set-hostname <new_hostname>
+hostnamectl set-hostname username

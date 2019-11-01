@@ -1,4 +1,43 @@
 #!/bin/bash
-rm -rf ~/.cocoapods.42_cache_bak*
-rm -rf ~/Library/*
-echo "done!"
+clear
+echo "------------- SYSTEM AND NETWORK INFOS -------------"
+printf "\n\n1) Display Hostname:\n2) List Users:\n3) Get last reboot:\n4) [IP Address] [netmask] [broadcast]:\n5) Display information About Operating System & Machine:\n6) Displaying Detailed Hardware Information:\n\n\n\n"
+echo "ENTER KEY-NUMBER[1-6]: "
+while :
+do
+	read INPUT_STRING
+	case $INPUT_STRING in
+		2)
+			clear
+			awk -F: '{ print $1}' /etc/passwd
+			break
+			;;
+		1)
+			clear
+			hostname
+			break
+			;;
+		3)
+			clear
+			uptime
+			break
+			;;
+		4)
+			clear
+			ifconfig enp0s3 | grep "inet " | awk "{print $4}" | cut -c 9-
+			break
+			;;
+		5)
+			clear
+			hostnamectl
+			break
+			;;
+		6)
+			clear
+			sudo lshw -short
+			break
+			;;
+	esac
+done
+echo
+echo "Done!!"
